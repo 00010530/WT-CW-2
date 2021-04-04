@@ -1,0 +1,11 @@
+extends layout.pug 
+
+block content 
+    .container
+        .create-main
+            h1.task-msg Create task
+
+            form.form(action="/create" method='POST') 
+                input.input(type="text" name='task')
+
+                button.btn Create task
