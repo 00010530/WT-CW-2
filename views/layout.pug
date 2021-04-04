@@ -2,12 +2,22 @@ doctype html
 html(lang="en")
     head
         title To-Do app
-    body 
-        header.navbar
-            h1
-                a(href="/") To-Do app 
-            nav.nav
-                a(href="/create") Create
-                a(href="/list") To-Do List
+        link(rel="stylesheet", href="/static/styles.css")
 
-            block content
+    body
+        
+        header.header
+            .navbar
+                h1
+                    a(href="/") To-Do app 
+
+                nav.nav
+                    a(href="/create") Create
+                    a(href="/list") To-Do List
+        
+        block content
+
+
+    footer
+        .footer 
+            p This application is made for WebTech cw and doesnt represent any company

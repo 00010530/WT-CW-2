@@ -2,8 +2,9 @@ extends layout.pug
 
 block content
     .container
-        h1
-            | Let&apos;s 
-            span.heading-span plan 
-            | your day
-        a(href="/create") Create task
+        .main-info
+            h1.main-msg
+                | Let&apos;s 
+                span.msg-span plan 
+                | your day
+            a.main-button(href="/create") Create task
