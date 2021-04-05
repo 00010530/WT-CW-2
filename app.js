@@ -13,6 +13,12 @@ app.get('/create', (req, res) => {
     res.render('create')
 })
 
+const tasks = ['First task', 'Second task']
+
+app.get('/tasks', (req, res) => {
+    res.render('tasks', { tasks: tasks})
+})
+
 app.listen(8000, err => {
     if (err) console.log(err)
 

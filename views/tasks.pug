@@ -1,0 +1,11 @@
+extends layout.pug 
+
+block content 
+    .container 
+        .task-main
+            h1.task-msg All tasks 
+
+            each task in tasks 
+                .task-wrapper 
+                    a.task(href='#')= task 
+                    a.delete(href='#') Delete
