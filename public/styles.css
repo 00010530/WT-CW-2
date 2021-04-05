@@ -137,8 +137,8 @@ a{
     font-size: 1.3rem;
 }
 
-.task:hover{
-    text-decoration: underline;
+.task-wrapper:hover{
+    border: 1px solid #003566;
 }
 
 .delete{
