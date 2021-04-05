@@ -5,7 +5,13 @@ block content
         .create-main
             h1.task-msg Create task
 
+            if error
+                p.error Task cannot be empty!
+
+            if success
+                p.success Task is created!
+
             form.form(action="/create" method='POST') 
                 input.input(type="text" name='task')
 
-                a.main-button(href="/tasks") Create task
+                button.main-button Create task

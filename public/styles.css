@@ -103,6 +103,24 @@ a{
     margin-bottom: 40px;
 }
 
+.error {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #003566;
+    font-size: 1.2rem;
+    color: #e6b3b3;
+}
+
+.success{
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px;
+    background: #003566;
+    font-size: 1.2rem;
+    color: #e6b3b3;
+}
+
 .form{
     max-width: 80%;
 }
@@ -154,6 +172,8 @@ a{
     border: 1px solid #003566;
     transition: .5s;
 }
+
+
 
 /* footer */
 .footer{
