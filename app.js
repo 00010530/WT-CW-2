@@ -41,10 +41,15 @@ app.post('/create', (req, res) => {
     }
 })
 
-const tasks = ['First task', 'Second task']
-
 app.get('/tasks', (req, res) => {
-    res.render('tasks', { tasks: tasks})
+
+    fs.readFile('./data/tasks.json', (err, data) => {
+        if (err) throw err 
+
+        const tasks = JSON.parse(data)
+        
+        res.render('tasks', { tasks: tasks })
+    })
 })
 
 app.listen(8000, err => {

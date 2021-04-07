@@ -7,5 +7,5 @@ block content
 
             each task in tasks 
                 .task-wrapper 
-                    p.task(href='#')= task 
+                    p.task #{ task.task } 
                     a.delete(href='#') Delete
