@@ -24,4 +24,4 @@ node app
 - pug.js
 
 ### Repository on github
-[link to github repo] (https://github.com/00010530/WT-CW-2)
+[link to github repo](https://github.com/00010530/WT-CW-2)
